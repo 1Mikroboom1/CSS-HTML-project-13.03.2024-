@@ -3,6 +3,7 @@ body {
     display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
+    overflow-x: hidden;
 }
 
 .snowhead {
@@ -42,7 +43,7 @@ body {
 
 @keyframes slideAnimation1 {
     0% {
-        transform: translateX(400%);
+        transform: translateX(500%);
     }
     100% {
         transform: translateX(-100%);
@@ -51,7 +52,7 @@ body {
 
 @keyframes slideAnimation2 {
     0% {
-        transform: translateX(300%);
+        transform: translateX(400%);
         visibility: visible;
     }
     100% {
@@ -61,7 +62,7 @@ body {
 
 @keyframes slideAnimation3 {
     0% {
-        transform: translateX(200%);
+        transform: translateX(300%);
         visibility: visible;
     }
     100% {
@@ -71,7 +72,7 @@ body {
 
 @keyframes slideAnimation4 {
     0% {
-        transform: translateX(100%);
+        transform: translateX(200%);
         visibility: visible
     }
     100% {
@@ -85,24 +86,31 @@ body {
     flex-direction: row;
 }
 
-.slide:nth-child(1) {
+#slide1 {
     animation: slideAnimation1 20s linear infinite;
     animation-delay: 0s;
+    width: 20%;
 }
-.slide:nth-child(2) {
+
+#slide2 {
     visibility: hidden;
     animation: slideAnimation2 20s linear infinite;
     animation-delay: 5s;
+    width: 20%;
 }
-.slide:nth-child(3) {
+
+#slide3 {
     visibility: hidden;
     animation: slideAnimation3 20s linear infinite;
     animation-delay: 10s;
+    width: 20%;
 }
-.slide:nth-child(4) {
+
+#slide4 {
     visibility: hidden;
     animation: slideAnimation4 20s linear infinite;
     animation-delay: 15s;
+    width: 20%;
 }
 
 .slide img {
@@ -114,42 +122,46 @@ body {
     position: relative;
     z-index: 1;
     height: 150%;
-    background-image: url(assets/BGimg1.jpg);
+    background-image: url(assets/BGimg1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-    opacity: 50%;
-    > .mnblock1 {
-        opacity: 100%;
-        position: absolute;
-        margin-top: 0%;
-        z-index: 2;
-        opacity: 100%;
-        background-color: whitesmoke;
-        width: 100%;
-    }
-    > .custom-dropdown {
-        opacity: 100%;
-        position: relative;
-        display: inline-block;
-    }
-    > .custom-dropdown select {
-        opacity: 100%;
-        padding: 26px 36px;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        font-size: 30px;
-        background-color: #f0f0f0;
-    }
-    > .mnblock2 {
-        opacity: 100%;
-        position: absolute;
-        margin-top: 10%;
-        z-index: 2;
-        opacity: 100%;
-        background-color: whitesmoke;
-        width: 100%;        
-    }
 }
+
+.mnblock1 {
+    opacity: 100%;
+    position: absolute;
+    margin-top: 0%;
+    z-index: 2;
+    opacity: 100%;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.custom-dropdown {
+    opacity: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown select {
+    opacity: 100%;
+    padding: 26px 36px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: #f0f0f0;
+}
+
+.mnblock2 {
+    opacity: 100%;
+    position: absolute;
+    margin-top: 10%;
+    z-index: 2;
+    opacity: 100%;
+    background-color: whitesmoke;
+    width: 100%;        
+}
+
 
 .downline {
     columns: 3;
