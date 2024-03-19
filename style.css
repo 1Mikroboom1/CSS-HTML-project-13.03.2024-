@@ -81,9 +81,7 @@ body {
 }
 
 .slide {
-    flex: 0 0 25%;
     position: relative;
-    flex-direction: row;
 }
 
 #slide1 {
@@ -126,11 +124,9 @@ body {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-around;
-    opacity: 100%;
     position: absolute;
     margin-top: 1.2%;
     z-index: 2;
-    opacity: 100%;
     background-color: rgba(245, 245, 245, 0.7);
     width: 100%;
 }
