@@ -201,7 +201,7 @@ body {
     margin-top: 60%;
     z-index: 2;
     background-color: rgba(245, 245, 245, 0.7);
-    width: 100%;        
+    width: 100%;
 }
 
 .downline {
@@ -214,6 +214,29 @@ body {
     align-items: center;
     font-size: 300%;
     color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    font-size: xx-large;
+    font-weight: 600;
+}
+  
+a:link,
+a:visited,
+a:focus {
+    color: rgb(1, 81, 255);
+}
+  
+a:hover {
+    text-decoration: none;
+    color: rgb(56, 125, 255);
+}
+  
+a:active {
+    color: rgb(111, 0, 255);
 }
 
 #vk {
@@ -236,4 +259,38 @@ body {
     font-size: medium;
     width: 35%;
     color: rgb(80, 80, 80);
+}
+
+.top1 {
+    line-height: 3;
+    background-color: rgb(0, 179, 255);
+}
+
+.main1 {
+    line-height: 10;
+    background-image: url(assets/BGimg1.png);
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.down1{
+    line-height: 3;
+    background-color: rgb(0, 179, 255);
+}
+
+.top2 {
+    line-height: 3;
+    background-color: rgb(0, 179, 255);
+}
+
+.main2 {
+    line-height: 10;
+    background-image: url(assets/BGimg1.png);
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.down2{
+    line-height: 3;
+    background-color: rgb(0, 179, 255);
 }
