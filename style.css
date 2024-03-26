@@ -271,25 +271,29 @@ a:active {
 @keyframes righthand {
     0% {transform: rotate(40deg);}
     50% {transform: rotate(-40deg);}
-    100% {transform: rotate(40deg);}
+    90% {transform: rotate(40deg);}
+    100% {transform: rotate(0deg);}
 }
 
 @keyframes lefthand {
     0% {transform: rotate(-40deg);}
     50% {transform: rotate(40deg);}
-    100% {transform: rotate(-50deg);}
+    90% {transform: rotate(-40deg);}
+    100% {transform: rotate(0deg);}
 }
 
 @keyframes rightleg {
-    0% {transform: rotate(20deg);}
-    50% {transform: rotate(-20deg);}
-    100% {transform: rotate(20deg);}
+    0% {transform: rotate(10deg);}
+    50% {transform: rotate(-10deg);}
+    90% {transform: rotate(10deg);}
+    100% {transform: rotate(0deg);}
 }
 
 @keyframes leftleg {
-    0% {transform: rotate(-20deg);}
-    50% {transform: rotate(20deg);}
-    100% {transform: rotate(-20deg);}
+    0% {transform: rotate(-10deg);}
+    50% {transform: rotate(10deg);}
+    90% {transform: rotate(-10deg);}
+    100% {transform: rotate(0deg);}
 }
 
 @keyframes stickmovee {
@@ -317,7 +321,7 @@ a:active {
 
 .main2 {
     display: flex;
-    background-image: url(RelayRace-assets/background.jpg);
+    background-image: url(RelayRace-assets/background.png);
     background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -490,12 +494,256 @@ a:active {
 
 .main1 {
     line-height: 10;
-    background-image: url(assets/BGimg1.png);
+    background-image: url(Biathlon-assets/background.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
+}
+
+@keyframes movee2 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(400%);}
+}
+
+@keyframes rifle1 {
+    0% {transform: rotate(-50deg);
+    visibility: visible;}
+    100% {transform: rotate(-50deg);
+        visibility: hidden;}
+}
+
+@keyframes rifle2 {
+    0% {transform: rotate(-50deg);
+        visibility: visible;}
+    90% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);
+        visibility: visible;}
+}
+
+@keyframes righthand1 {
+    0% {transform: rotate(40deg);
+        visibility: visible;}
+    50% {transform: rotate(-40deg);}
+    90% {transform: rotate(40deg);}
+    100% {transform: rotate(0deg);
+        visibility: hidden;}
+}
+
+@keyframes lefthand1 {
+    0% {transform: rotate(-40deg);
+        visibility: visible;}
+    50% {transform: rotate(40deg);}
+    90% {transform: rotate(-40deg);}
+    100% {transform: rotate(0deg);
+        visibility: hidden;}
+}
+
+@keyframes righthand2 {
+    0% {transform: rotate(-70deg);
+        visibility: visible;}
+    100% {transform: rotate(0deg);
+        visibility: visible;}
+}
+
+@keyframes lefthand2 {
+    0% {transform: rotate(-70deg);
+        visibility: visible;}
+    100% {transform: rotate(0deg);
+        visibility: visible;}
+}
+
+@keyframes blackdots {
+    0% {visibility: visible;}
+    100% {visibility: hidden;}
+}
+
+@keyframes shot {
+    0% {visibility: visible;}
+    30% {visibility: hidden;}
+    100% {visibility: hidden;}
+}
+
+.biathlete {
+    margin-top: 27%;
+    margin-left: 1%;
+    display: block;
+    position: absolute;
+    animation: movee2 3.5s linear forwards;
+}
+
+.biathlete_parts{
+    position: absolute;
+}
+
+#Torso {
+    position: relative;
+    z-index: 2;
+    width: 150%;
+}
+
+#Left_hand {
+    position: relative;
+    z-index: 1;
+    width: 150%;
+    margin-top: -100%;
+    margin-left: 75%;
+    animation: lefthand1 4s linear forwards;
+    transform-origin: 0% 0%;
+}
+
+#Left_hand22 {
+    visibility: hidden;
+    position: relative;
+    z-index: 1;
+    width: 150%;
+    margin-top: -330%;
+    margin-left: 75%;
+    animation: lefthand2 1s linear forwards;
+    animation-delay: 4s;
+    transform-origin: 0% 0%;
+}
+
+#Right_hand {
+    position: relative;
+    z-index: 3;
+    width: 170%;
+    margin-top: -330%;
+    margin-left: 65%;
+    animation: righthand1 4s linear forwards;
+    transform-origin: 0% 0%;
+}
+
+#Right_hand22 {
+    visibility: hidden;
+    position: relative;
+    z-index: 3;
+    width: 170%;
+    margin-top: -330%;
+    margin-left: 65%;
+    animation: righthand2 1s linear forwards;
+    animation-delay: 4s;
+    transform-origin: 0% 0%;
+}
+
+#Left_leg {
+    position: relative;
+    z-index: 1;
+    width: 300%;
+    margin-top: -242%;
+    margin-left: -237%;
+    animation: leftleg 4s linear forwards;
+    transform-origin: 80% 0%;
+}
+
+#Right_leg {
+    position: relative;
+    z-index: 3;
+    width: 300%;
+    margin-top: -237%;
+    margin-left: -37%;
+    animation: rightleg 4s linear forwards;
+    transform-origin: 20% 0%;
+}
+
+#rifle1 {
+    position: relative;
+    z-index: 2;
+    width: 300%;
+    margin-top: -380%;
+    margin-left: -100%;
+    animation: rifle1 4s linear forwards;
+}
+
+#rifle2 {
+    visibility: hidden;
+    position: relative;
+    z-index: 2;
+    width: 300%;
+    margin-top: -380%;
+    margin-left: 100%;
+    animation: rifle2 1s linear forwards;
+    animation-delay: 4s;
+    transform-origin: 0% 100%;
+}
+
+.othercontent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Pirate {
+    margin-top: 40%;
+    margin-right: 3%;
+    width: 10%;
+}
+
+#blackdots {
+    position: absolute;
+    z-index: 6;
+    margin-top: 30%;
+    width: 20%;
+    animation: blackdots 1s linear forwards;
+    animation-delay: 6s;
+}
+
+#blackdots1 {
+    position: absolute;
+    z-index: 5;
+    margin-top: 30%;
+    width: 20%;
+    animation: blackdots 1s linear forwards;
+    animation-delay: 7s;
+}
+
+#blackdots2 {
+    position: absolute;
+    z-index: 4;
+    margin-top: 30%;
+    width: 20%;
+    animation: blackdots 1s linear forwards;
+    animation-delay: 9s;
+}
+
+#blackdots3 {
+    position: absolute;
+    z-index: 3;
+    margin-top: 30%;
+    width: 20%;
+    animation: blackdots 1s linear forwards;
+    animation-delay: 11s;
+}
+
+#blackdots4 {
+    position: absolute;
+    z-index: 2;
+    margin-top: 30%;
+    width: 20%;
+    animation: blackdots 1s linear forwards;
+    animation-delay: 13s;
+}
+
+#blackdots5 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 30%;
+    width: 20%;
+}
+
+#shot {
+    visibility: hidden;
+    position: absolute;
+    z-index: 3;
+    width: 2%;
+    margin-top: 32%;
+    margin-right: 56%;
+    animation: shot 2s linear forwards;
+    animation-iteration-count: 5;
+    animation-delay: 6s;
 }
 
 .down1{
     line-height: 3;
     background-color: rgb(0, 179, 255);
+    > p {
+        margin-left: 3%;
+    }
 }
